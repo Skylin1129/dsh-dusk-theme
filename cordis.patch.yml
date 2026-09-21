@@ -1,0 +1,6 @@
+# 夕 theme bundle patch: inserts this package's client entry into
+# the web plugin roster. Installed via `dsh plugin --profile web add github:<owner>/dsh-dusk-theme`.
+# To disable the skin, remove its row from the profile patch (or uninstall the package).
+- insert:
+    - id: dusk-theme
+      name: dsh-dusk-theme

@@ -1,0 +1,49 @@
+{
+  "name": "dsh-dusk-theme",
+  "version": "0.1.0",
+  "description": "夕 theme skin for DeepSeek Harness Web — azurite/malachite ink palette and a vermilion 「夕」 seal, with a bundled default background image, crop/zoom framing, dual glass sliders, and a configurable base color in Settings → General.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "assets/default-background.jpg",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "theme",
+    "skin",
+    "web-ui",
+    "arknights",
+    "dusk"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    }
+  }
+}
