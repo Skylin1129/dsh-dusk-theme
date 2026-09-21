@@ -2,6 +2,14 @@
   "name": "dsh-dusk-theme",
   "version": "0.1.0",
   "description": "夕 theme skin for DeepSeek Harness Web — azurite/malachite ink palette and a vermilion 「夕」 seal, with a bundled default background image, crop/zoom framing, dual glass sliders, and a configurable base color in Settings → General.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skylin1129/dsh-dusk-theme.git"
+  },
+  "homepage": "https://github.com/Skylin1129/dsh-dusk-theme#readme",
+  "bugs": {
+    "url": "https://github.com/Skylin1129/dsh-dusk-theme/issues"
+  },
   "type": "module",
   "main": "lib/index.js",
   "exports": {
